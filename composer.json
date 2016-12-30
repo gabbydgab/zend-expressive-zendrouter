@@ -49,6 +49,6 @@
         "cs-check": "phpcs",
         "cs-fix": "phpcbf",
         "license-check": "docheader check src/ test/",
-        "test": "phpunit"
+        "test": "phpunit --colors=always"
     }
 }
