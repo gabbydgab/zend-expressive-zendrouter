@@ -126,7 +126,7 @@ class ZendRouter implements RouterInterface
             ));
         }
 
-        $name = isset($this->routeNameMap[$name]) ? $this->routeNameMap[$name] : $name;
+        $name = $this->routeNameMap[$name] ?? $name;
 
         $options = [
             'name'             => $name,
