@@ -5,6 +5,8 @@
  * @license   https://github.com/zendframework/zend-expressive-zendrouter/blob/master/LICENSE.md New BSD License
  */
 
+declare(strict_types = 1);
+
 namespace Zend\Expressive\Router;
 
 use Fig\Http\Message\RequestMethodInterface as RequestMethod;
@@ -137,7 +139,7 @@ class ZendRouter implements RouterInterface
     /**
      * @return TreeRouteStack
      */
-    private function createRouter()
+    private function createRouter() : TreeRouteStack
     {
         return new TreeRouteStack();
     }
@@ -240,7 +242,7 @@ class ZendRouter implements RouterInterface
      * @param string $name
      * @return string
      */
-    private function getMatchedRouteName($name)
+    private function getMatchedRouteName($name) : string
     {
         // Check for <name>/GET:POST style route names; if so, strip off the
         // child route matching the method.
