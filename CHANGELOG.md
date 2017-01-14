@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
-## 1.4.0 - TBD
+## 2.1.0 - TBD
 
 ### Added
 
@@ -20,11 +20,37 @@ All notable changes to this project will be documented in this file, in reverse 
 
 - Nothing.
 
-## 1.3.1 - TBD
+## 2.0.1 - TBD
 
 ### Added
 
 - Nothing.
+
+### Deprecated
+
+- Nothing.
+
+### Removed
+
+- Nothing.
+
+### Fixed
+
+- Nothing.
+
+## 2.0.0 - 2017-01-11
+
+### Added
+
+- [#16](https://github.com/zendframework/zend-expressive-zendrouter/pull/16)
+  adds support for zend-expressive-router 2.0. This includes a breaking change
+  to those _extending_ `Zend\Expressive\Router\ZendRouter`, as the
+  `generateUri()` method now expects a third, optional argument,
+  `array $options = []`.
+
+  For consumers, this represents new functionality; you may now pass router
+  options, such as a translator and/or translation text domain, via the new
+  argument when generating a URI.
 
 ### Deprecated
 
